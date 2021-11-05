@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/* reset = 초기화 */
+* {margin: 0; padding: 0; box-sizing: border-box}
+/* li{margin: 0;padding: 0; list-style: none;}-> ul 앞에 모양들 없애는 것 */
+li{margin: 0;padding: 0; list-style: none;}
+
+/* margin : 바깥여백  */
+/* padding : 안쪽여백 */
+#wrap {width: 1200px; margin: 0 auto; }
+/* header */
+/* #000->16진수표기법 or RGB표기법 */
+/* 레이아웃의 높이값을 유지하면서 선을 넣는 방법 
+ box-sizing : border/margin/padding-box (보통 전체 값에 넣어줌) */
+#wrap header {width: 1200px; height: 120px; border-bottom: 1px solid #000;box-sizing: border-box;}
+/* logo  opacity:투명도*/
+#wrap header .logo {width: 300px; height: 120px;float: left;}
+#wrap header .logo img {margin-top: 48px;}
+#wrap header .logo img:hover {opacity: 0.7;}
+
+/* background: rgb(245, 205, 205); */
+#wrap header .meun {width: 900px; height: 120px;float: left;}
+#wrap header .meun ul {float:right; margin-top: 48px;}
+/* margin-left: 글자사이간격 여백 */
+#wrap header .meun ul li {float : left; margin-left: 60px;}
+/* text-decoration: none 링크에 파랑선 미적용  font-weight: bold 글자 굵게*/
+#wrap header .meun ul li a {font-size: 17px; color: #000; text-decoration: none; font-weight: bold;}
+#wrap header .meun ul li a:hover {color: #999;}
+/* a:hover-> 마우스 올렸을때 색변화 */
+
+#wrap section.con {width: 1200px; height: 500px; background: #999;}
+#wrap section.con .slide {width: 730px; height: 500px; float: left;}
+#wrap section.con .slide img {display: block;}
+/* 만약 이미지 사이즈가 안맞으면 ↑이미지 사이즈 조절하기 /로고가 얇은건 사이즈조절하는게 좋아아*/
+
+#wrap section.con .nb {width: 470px; height: 500px; float: left; }
+/* 공지사항 */
+#wrap section.con .nb .notice {width: 470px; height: 250px; background: #fff;}
+#wrap section.con .nb .notice h2 {color: #666; padding: 12px 0 0 7px;}
+/* padding: 상단 오른쪽 하단 왼쪽 ; padding: 숫자하나면 모든 위치 */
+#wrap section.con .nb .notice ul {padding: 7px;}
+#wrap section.con .nb .notice li {height: 30px; line-height: 30px; border-bottom: 1px dotted #ddd}
+/* 리스트의 높이값을 30px로 준 이후 리스트 내용을 수직 중앙 정렬로 하려면 line-height값을 같은 수치로 입력  */
+
+#wrap section.con .nb .notice li a {color: #666; text-decoration: none;}
+#wrap section.con .nb .notice li a:hover {color: #666; text-decoration: underline;}
+#wrap section.con .nb .notice li span {color: #ddd;font-size: 14px; float:right; }
+
+/* 배너 */
+#wrap section.con .nb .banner {width: 470px; height: 250px; }
+
+#wrap section.btn {width: 1200px; height: 180px;}
+#wrap section.btn ul li {float: left; margin: 40px 50px;}
+/* margin: 40px 50px 상하단/좌우여백 표시 */
+#wrap section.btn ul li img {width: 100px;height: 100px;}
+#wrap section.btn ul li img:hover {opacity: 0.7;}
+
+#wrap footer {width: 1200px; height: 120px; border-top: 1px solid #000;box-sizing: border-box;}
+#wrap footer p {font-size: 14px; text-align: center; padding-top: 20px;}
+#wrap footer a {color: #000; text-transform: uppercase; text-decoration: none;}
+/* text-transform: uppercase 일괄 대문자로 바꾸는 것 */
+/* text-decoration: none 선 없음 */
+
+
+#wrap footer a:hover {color: #999;text-decoration: underline;}
+/* #wrap footer a:hover {color: #999;text-decoration: underline;}
+    ↑ 마우스 글자에 올렸을 떄 색 회색,선 생김 */
